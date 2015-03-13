@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+	<meta charset="utf-8">
+		
+	<title>The Website Title</title>
+
+	<meta name="robots" content="index, follow, noodp, noydir">
+
+	<meta name="description" content="The page description goes here." />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--[if lt IE 9]>
+    	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="styles.css">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+	<style>
+	#map {
+		height: 680px;
+	}
+	</style>
+
+</head>
+
+
+	<body>
+
+		<h1>Greg's Blog</h1>
+
+			<nav>
+
+				<ul>
+
+				    <li> <a href="index.hmtl">Home</a></li>
+					<li> <a href="the-beginning.html">The Beginning</a>
+						<ul>	
+							<li><a href="">6th Century</a></li>
+						</ul>	
+					</li>
+					<li> <a href="the-present.html">The Present</a></li>
+					<li> <a href="the-future.html">The Future</a></li>
+					<li> <a href="about-me.html">About Me</a>
+						<ul>
+							<li><a href="contact.html">Contact Me</a></li>
+							<li><a href="">FAQs</a></li>
+							<li><a href="my-address.html">My Address</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</nav>
+
+			<div id="map">
+
+			<script>
+
+			// create a map in the "map" div, set the view to a given place and zoom
+			var map = L.map('map').setView([-36.871446,174.779278,820], 18);
+
+			// add an OpenStreetMap tile layer
+			L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+			    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+			}).addTo(map);
+
+			// add a marker in the given location, attach some popup content to it and open the popup
+			L.marker([-36.871446,174.779278,820]).addTo(map)
+			    .bindPopup('My work place because you noobs dont have to know where I live. Get to challenger and I will tell you where I live)
+			    .openPopup();
+
+			 </script>
+
+			 </div>
+
+			 <div id="address">
+
+			 	<p>43 Remuera Rd,<br>Newmarket,<br>Auckland,<br>New Zealand</p>
+
+
+
+
+
+
+			 </div>
+
+	</body>
+
+</html>

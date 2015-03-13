@@ -1,0 +1,130 @@
+h1 {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #ff88c3;
+}
+
+body {
+	background-color: #c7fffb;
+}
+
+
+a {
+	color: #ffc8cf;
+}
+
+
+p {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #ff88c3;
+	padding: 1em;
+	margin:0 auto;
+	width: 88%;
+	max-width: 960px;
+}
+
+#contact {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+	color: #ff88c3;
+	padding: 1em;
+	margin:0 auto;
+	width: 88%;
+	max-width: 960px;
+	border: 1px dashed red;
+}
+
+#map {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 70%;
+	height: 50%;
+	margin: 200px 50px 50px 50px;
+
+}
+
+#address {
+	position: relative;
+	float: right;
+	margin-right: 200px;
+	margin-top: 150px;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+
+
+}
+
+
+
+
+
+/*Naviagation
+---------------------------------------*/
+
+nav ul {
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+	background-color: #004f89;
+	border-top: 1px solid black;
+	text-align: left;
+	font-family: Verdana, Geneva, sans-serif;
+	border-radius: 10px 10px 10px 10px;
+	padding: 2em;
+	
+}
+
+nav ul li:hover {
+	background: #fb0005;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 1em;
+	display: block;
+
+}
+
+/*Media Queries
+-----------------------------------------*/
+
+@media screen and (min-width: 800px) {
+nav {
+
+	}
+
+nav ul li {
+		float: left;
+		width: 19.8%;
+		border-right: 1px solid #fff;
+		text-align: center;
+		padding: 0; 
+	}
+
+nav ul li ul {
+		padding: 0;
+		position: fixed;
+		width: 98.5%;
+		float: left;
+		left: -999em;
+		float: left;
+	}
+
+nav ul li:hover ul {
+		left: auto;
+	}
+
+nav ul li ul li, 
+nav ul li ul li:nth-child(2) {
+	width: 19.8%;
+	padding: 0;
+	border-right: 0;
+	border-left: 0;
+}
+
+nav ul li:nth-child() {
+		background-color: #004f89;
+	}
+}
